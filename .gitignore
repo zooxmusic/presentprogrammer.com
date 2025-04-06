@@ -1,54 +1,39 @@
-# C++ objects and libs
-*.slo
-*.lo
-*.o
-*.a
-*.la
-*.lai
-*.so
-*.so.*
-*.dll
-*.dylib
+# Node & system stuff
+.DS_Store
+Thumbs.db
 
-# Qt-es
-object_script.*.Release
-object_script.*.Debug
-*_plugin_import.cpp
-/.qmake.cache
-/.qmake.stash
-*.pro.user
-*.pro.user.*
-*.qbs.user
-*.qbs.user.*
-*.moc
-moc_*.cpp
-moc_*.h
-qrc_*.cpp
-ui_*.h
-*.qmlc
-*.jsc
-Makefile*
-*build-*
-*.qm
-*.prl
+# Docker
+*.pid
+*.log
+.env
+docker-compose.override.yml
 
-# Qt unit tests
-target_wrapper.*
+# Docker volumes
+db_data/
+wordpress/wp-content/uploads/
+wordpress/wp-content/cache/
 
-# QtCreator
-*.autosave
+# WordPress core files (optional if you’re syncing the full source)
+wordpress/wp-admin/
+wordpress/wp-includes/
 
-# QtCreator Qml
-*.qmlproject.user
-*.qmlproject.user.*
+# Jetpack debug logs
+debug.log
+jetpack-*.log
 
-# QtCreator CMake
-CMakeLists.txt.user*
+# WordPress config (if you don’t want to commit secrets)
+wordpress/wp-config.php
 
-# QtCreator 4.8< compilation database
-compile_commands.json
+# Kubernetes
+*.yaml~         # editor backups
+*.bak
+*.swp
+*.tmp
 
-# QtCreator local machine specific files for imported projects
-*creator.user*
+# VSCode / IDE settings
+.vscode/
+.idea/
 
-*_qmlcache.qrc
+# OS-specific
+ehthumbs.db
+Icon?
